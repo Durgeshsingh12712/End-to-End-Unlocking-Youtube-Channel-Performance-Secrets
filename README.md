@@ -91,8 +91,7 @@ graph TB
     G[📱 Web Interface] --> H[🔮 Prediction Pipeline]
     H --> I[📈 Results]
     
-    D --> J[📋 MLflow Tracking]
-    E --> J
+    E 
 ```
 
 ### 📁 **Directory Structure**
@@ -166,7 +165,7 @@ python app.py
 
 ### 🐍 **Programmatic Usage**
 ```python
-from src.youtube_prediction.pipeline.prediction import PredictPipeline, CustomData
+from youtube.pipeline.prediction import PredictionPipeline, CustomData
 
 # Create prediction data
 data = CustomData(
@@ -394,9 +393,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### 📞 **Get in Touch**
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Durgeshsingh12712)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/durgesh-singh-88822b348/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:durgeshsingh12712@gmail.com)
 
 **⭐ Star this repo if you found it helpful!**
 
