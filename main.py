@@ -18,3 +18,12 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e
+
+try:
+    logger.info(">>>>>>>Data Transformation Started <<<<<<<")
+    data_tranformation = TrainingPipeline()
+    data_tranformation.data_tranformation()
+    logger.info(f">>>>>>> Data Tranformation Completed <<<<<<<")
+except Exception as e:
+    logger.exception(e)
+    raise e

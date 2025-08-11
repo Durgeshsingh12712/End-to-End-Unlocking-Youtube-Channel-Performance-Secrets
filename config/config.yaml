@@ -12,3 +12,10 @@ data_validation:
   STATUS_FILE: artifacts/data_validation/status.txt
   required_files:
     - data.csv
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/data.csv
+  preprocessor_obj_file_path: artifacts/data_transformation/preprocessor.pkl
+  transformed_train_file_path: artifacts/data_transformation/train.csv
+  transformed_test_file_path: artifacts/data_transformation/test.csv

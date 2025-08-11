@@ -6,6 +6,7 @@ from youtube.configure import ConfigurationManager
 from youtube.components import (
     DataIngestion,
     DataValidation,
+    DataTransformation,
 )
 
 class TrainingPipeline:
@@ -33,3 +34,15 @@ class TrainingPipeline:
             return data_validation_artifact
         except Exception as e:
             raise YException(e, sys)
+    
+    def data_tranformation(self):
+        try:
+            config = ConfigurationManager()
+            data_transformation_config = config.get_data_transformation_config()
+            data_transformation = DataTransformation(config=data_transformation_config)
+            data_transformation_artifact = data_transformation.initiate_data_transformation()
+            logger.info("Data Transformation Completed")
+            return data_transformation_artifact
+        except Exception as e:
+            raise YException(e, sys)
+        

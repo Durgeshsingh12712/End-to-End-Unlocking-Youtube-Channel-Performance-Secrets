@@ -14,3 +14,11 @@ class DataValidationConfig:
     STATUS_FILE: str
     unzip_data_dir: Path
     required_files: list
+
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    preprocessor_obj_file_path: Path
+    transformed_train_file_path: Path
+    transformed_test_file_path: Path

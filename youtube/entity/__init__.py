@@ -1,11 +1,13 @@
 from .config_entity import (
     DataIngestionConfig,
     DataValidationConfig,
+    DataTransformationConfig,
 )
 
 from .artifacts_entity import (
     DataIngestionArtifact,
     DataValidationArtifact,
+    DataTransformationArtifact,
 )
 
 __all__ = [
@@ -13,4 +15,6 @@ __all__ = [
     "DataIngestionArtifact",
     "DataValidationConfig",
     "DataValidationArtifact",
+    "DataTransformationConfig",
+    "DataTransformationArtifact",
 ]
