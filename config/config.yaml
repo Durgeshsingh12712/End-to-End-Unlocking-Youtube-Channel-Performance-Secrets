@@ -1,0 +1,7 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://raw.githubusercontent.com/Durgeshsingh12712/Data-All/refs/heads/main/Unified%20Dataset/youtube_channel_real_performance_analytics.csv
+  local_data_file: artifacts/data_ingestion/data.csv
+  unzip_dir: artifacts/data_ingestion
