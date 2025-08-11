@@ -7,6 +7,7 @@ from youtube.components import (
     DataIngestion,
     DataValidation,
     DataTransformation,
+    ModelTrainer,
 )
 
 class TrainingPipeline:
@@ -43,6 +44,17 @@ class TrainingPipeline:
             data_transformation_artifact = data_transformation.initiate_data_transformation()
             logger.info("Data Transformation Completed")
             return data_transformation_artifact
+        except Exception as e:
+            raise YException(e, sys)
+    
+    def model_trainer(self):
+        try:
+            config = ConfigurationManager()
+            model_trainer_config = config.get_model_trainer_config()
+            model_trainer = ModelTrainer(config=model_trainer_config)
+            model_trainer_artifact = model_trainer.initiate_model_trainer()
+            logger.info("Model Trainer Completed")
+            return model_trainer_artifact
         except Exception as e:
             raise YException(e, sys)
         

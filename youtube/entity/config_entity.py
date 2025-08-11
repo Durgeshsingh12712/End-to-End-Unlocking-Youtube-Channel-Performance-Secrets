@@ -22,3 +22,10 @@ class DataTransformationConfig:
     preprocessor_obj_file_path: Path
     transformed_train_file_path: Path
     transformed_test_file_path: Path
+
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    root_dir: Path
+    train_data_path: Path
+    test_data_path: Path
+    model_name: str

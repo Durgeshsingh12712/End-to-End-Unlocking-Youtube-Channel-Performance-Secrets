@@ -14,3 +14,7 @@ class DataTransformationArtifact:
     transformed_object_file_path: Path
     transformed_train_file_path: Path
     transformed_test_file_path: Path
+
+@dataclass
+class ModelTrainerArtifact:
+    trained_model_file_path: Path
