@@ -18,3 +18,7 @@ class DataTransformationArtifact:
 @dataclass
 class ModelTrainerArtifact:
     trained_model_file_path: Path
+
+@dataclass
+class ModelEvaluationArtifact:
+    evaluation_score: float

@@ -3,6 +3,7 @@ from .config_entity import (
     DataValidationConfig,
     DataTransformationConfig,
     ModelTrainerConfig,
+    ModelEvaluationConfig
 )
 
 from .artifacts_entity import (
@@ -10,6 +11,7 @@ from .artifacts_entity import (
     DataValidationArtifact,
     DataTransformationArtifact,
     ModelTrainerArtifact,
+    ModelEvaluationArtifact
 )
 
 __all__ = [
@@ -21,4 +23,6 @@ __all__ = [
     "DataTransformationArtifact",
     "ModelTrainerConfig",
     "ModelTrainerArtifact",
+    "ModelEvaluationConfig",
+    "ModelEvaluationArtifact"
 ]
