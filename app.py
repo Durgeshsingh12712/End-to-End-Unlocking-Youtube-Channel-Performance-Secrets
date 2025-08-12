@@ -63,11 +63,10 @@ def predict_datapoint():
         error_message = f"An Error occured during prediction: {str(e)}"
         return render_template('home.html', error= error_message)
 
-@app.route('health')
+@app.route('/health')
 def health_check():
     """Health Check Endpoint"""
     return {"status": "healthy", "model_loaded": prediction_pipeline is not None}
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True, port=5000)
-    

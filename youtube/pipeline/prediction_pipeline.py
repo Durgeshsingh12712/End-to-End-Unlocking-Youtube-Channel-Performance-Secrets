@@ -35,23 +35,23 @@ class PredictionPipeline:
             raise YException(e, sys)
 
 class CustomData:
-    def __int__(
-            self,
-            video_duration: float,
-            days_since_publish: int,
-            day: int,
-            month: int,
-            year: int,
-            revenue_per_1000_views: float,
-            monetized_playbacks: float,
-            views: float,
-            watch_time_hours: float,
-            subscribers: float,
-            impressions: float,
-            video_thumbnail_ctr: float,
-            average_view_percentage: float,
-            average_view_duration: float,
-            day_of_week: int,
+    def __init__(
+        self,
+        video_duration: float,
+        days_since_publish: int,
+        day: int,
+        month: int,
+        year: int,
+        revenue_per_1000_views: float,
+        monetized_playbacks: float,
+        views: float,
+        watch_time_hours: float,
+        subscribers: float,
+        impressions: float,
+        video_thumbnail_ctr: float,
+        average_view_percentage: float,
+        average_view_duration: float,
+        day_of_week: int,
     ):
         self.video_duration = video_duration
         self.days_since_publish = days_since_publish

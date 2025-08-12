@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Analytics Predictor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 40px;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255,107,107,0.3);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(255,107,107,0.4);
+            color: white;
+        }
+        .youtube-icon {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">
+                    <i class="fab fa-youtube youtube-icon"></i>
+                    YouTube Analytics Predictor
+                </h1>
+                <p class="hero-subtitle">
+                    Harness the power of machine learning to predict your YouTube video performance
+                </p>
+                
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Performance Prediction</h4>
+                            <p>Get accurate predictions for your YouTube video metrics based on historical data and current trends.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>AI-Powered Insights</h4>
+                            <p>Leverage advanced machine learning algorithms trained on comprehensive YouTube analytics data.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>Optimize Strategy</h4>
+                            <p>Make data-driven decisions to improve your content strategy and maximize your channel's growth.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-5">
+                    <a href="/predictdata" class="cta-button">
+                        <i class="fas fa-play-circle me-2"></i>
+                        Start Predicting Now
+                    </a>
+                </div>
+                
+                <div class="row mt-5 text-center">
+                    <div class="col-12">
+                        <h5 style="color: rgba(255,255,255,0.8); margin-bottom: 20px;">Key Features</h5>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <i class="fas fa-eye" style="font-size: 2rem; color: #ffd700;"></i>
+                                <p style="color: rgba(255,255,255,0.9); margin-top: 10px;">View Predictions</p>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-clock" style="font-size: 2rem; color: #ffd700;"></i>
+                                <p style="color: rgba(255,255,255,0.9); margin-top: 10px;">Watch Time Analysis</p>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-dollar-sign" style="font-size: 2rem; color: #ffd700;"></i>
+                                <p style="color: rgba(255,255,255,0.9); margin-top: 10px;">Revenue Forecasting</p>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-users" style="font-size: 2rem; color: #ffd700;"></i>
+                                <p style="color: rgba(255,255,255,0.9); margin-top: 10px;">Subscriber Growth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
