@@ -100,7 +100,7 @@ youtube_channel_prediction/
 ├── 🔧 config/
 │   ├── config.yaml              # System configuration
 │   └── params.yaml              # Model parameters
-├── 🚀 src/youtube_prediction/
+├── 🚀 youtube/
 │   ├── 🧩 components/           # Core ML components
 │   ├── 🔄 pipeline/             # Training & prediction pipelines
 │   ├── 📦 entity/               # Data classes & schemas

@@ -5,10 +5,10 @@ matplotlib
 scikit-learn
 dill
 flask
-box
+python-box
 ensure
 PyYAML
-pickle
+joblib
 scipy
 
 -e .
