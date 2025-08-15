@@ -14,6 +14,10 @@ class PredictionPipeline:
             preprocessor_path = "artifacts/data_transformation/preprocessor.pkl"
             self.model = load_bin(Path(model_path))
             self.preprocessor = load_bin(Path(preprocessor_path))
+
+            if not hasattr(self.model, 'monotonic_cst'):
+                self.model.monotonic_cst = None
+
             logger.info(f"Loaded Model From {model_path} and Preprocessor from {preprocessor_path}")
         except Exception as e:
             logger.error("Failed to Load Model or Preprocessor")
