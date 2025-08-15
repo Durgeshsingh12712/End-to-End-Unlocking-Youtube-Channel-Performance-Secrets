@@ -16,6 +16,14 @@
 
 </div>
 
+## **Homepage**
+![My Image](https://github.com/Durgeshsingh12712/Data-All/blob/main/Unified%20Dataset/Unified/youtube%201.png)
+
+## **Demo**
+[![PDFQuery Demo - PDF Question Answering with AI](https://img.youtube.com/vi/lerhEjvg0NQ/maxresdefault.jpg)](https://youtu.be/lerhEjvg0NQ)
+
+## **Prediction**
+![My Image](https://github.com/Durgeshsingh12712/Data-All/blob/main/Unified%20Dataset/Unified/Youtube%202.png)
 ---
 
 ## 🌟 Project Overview
